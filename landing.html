@@ -1,184 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stlye.css">
+  <head>
+    <!-- metatags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styling links -->
+    <link rel="stylesheet" href="stlye.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- title page -->
     <title>Food-Delivery</title>
-</head>
-<body>
-    <section class="page-one">
-        <nav class="navigation">
-            <div>
-                <img src="/assests/logo.svg" alt="logo">   
-            </div>
-            <div>
-                <ul class="links">
-                    <li>Home</li>
-                    <li>Menu</li>
-                    <li>How it works</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div>
-                <img src="/assests/Vector.svg" alt="search">
-                <img src="/assests/cart.svg" alt="cart">
-                <button><img src="/assests/clarity_sign-in-line.svg" alt="sign in"> Sign in</button>
-            </div>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="nav-container">
+        <!-- logo -->
+        <div class="logo">
+          <h4>Fresh Bite</h4>
+          <img src="/assests/food 2.svg" alt="" />
+          <!-- <img src="/assests/logo.svg" alt="logo">    -->
+        </div>
+
+        <!-- navigation links -->
+        <nav class="nav">
+          <ul class="nav--ul__one">
+            <li class="nav-link">Home</li>
+            <li class="nav-link">Menu</li>
+            <li class="nav-link">How it works</li>
+            <li class="nav-link">About</li>
+            <li class="nav-link">Contact</li>
+          </ul>
+          <ul class="nav--ul__two">
+            <li class="nav-link">
+              <img src="/assests/Vector.svg" alt="search" />
+            </li>
+            <li class="nav-link"><img src="/assests/cart.svg" alt="cart" /></li>
+            <li class="nav-link">
+              <button class="signin-btn">
+                <img src="/assests/clarity_sign-in-line.svg" alt="sign in" />
+                <span>Sign in</span>
+              </button>
+            </li>
+          </ul>
         </nav>
-    </section>
-        <main>
-            <div class="hero">
-                <div>
-                    <h2>Be The Fastest In Delivery Your Food</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit reprehenderit delectus aut odit laboriosam? Tempore, esse at! Alias culpa maiores, repellendus sed consectetur aperiam beatae. Dolore eaque quam sed.</p>
-                    <button><img src="/assests/clarity_sign-in-line.svg" alt="sign in">Get Started</button>
-                </div>
-            <div>
-                <img src="/assests/img-hero.svg" alt="image-hero">
+
+        <!-- hamburger navigation icon -->
+        <!-- <span class="hamburger-menu material-symbols-outlined">menu</span> -->
+        <span class="hamburger-menu"
+          ><img src="/assests/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="menu"
+        /></span>
+      </div>
+    </header>
+
+    <!-- main-content -->
+    <main id="mainElement">
+      <!-- hero-page -->
+      <aside>
+        <section class="page-one">
+          <div class="hero">
+            <div class="hero-text">
+              <h2 class="hero-header">Be The Fastest In Delivery Your Food</h2>
+              <p class="hero-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit
+                reprehenderit delectus aut odit laboriosam? Tempore, esse at!
+                Alias culpa maiores, repellendus sed consectetur aperiam beatae.
+              </p>
+              <button class="hero-btn">
+                <img src="/assests/clarity_sign-in-line.svg" alt="sign in" />
+                <span>Get Started</span>
+              </button>
             </div>
-        </div>
-    <section class="page-two">
-    <p>How it works</p>
-    <h2>What We Serve</h2>
-    <p>Product Quality Is Our Priority, And Always guarantees halal and safety until it is in your hands</p>
-    <div>
-        <img src="/assests/order 1.svg" alt="order">
-        <h3>Easy to Order</h3>
-        <p>you only order through the app</p>
-    </div>
-    <div>
-        <img src="/assests/delivery 1.svg" alt="delivery">
-        <h3>Fastest Delivery</h3>
-        <p>Delivery will be on time</p>
-    </div>
-    <div>
-        <img src="/assests/courier 1.svg" alt="courier">
-        <h3>Best Quality</h3>
-        <p>The best quality food for you</p>
-    </div>
-    </section>
-    <section class="page-three">
-        <p>Our menu</p>
-        <h3>Our Popular Menu</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti nam eum at voluptatum voluptate, numquam autem porro consequatur expedita assumenda sed et quas magni cum, dolorum reprehenderit beatae. Ullam.</p>
-        <div>
-            <img src="/assests/unsplash_G6wx5j5-dR8.svg" alt="">
-            <p>Mie Ramen</p>
-            <p>lorem ipsum</p>
-            <p>$20</p>
-            <img src="/assests/topcoat_like (1).svg" alt="">
-        </div>
-        <div>
-            <img src="/assests/unsplash_zBONkjGFGko.svg" alt="">
-            <p>Salad Tahu</p>
-            <p>lorem ipsum</p>
-            <p>$20</p>
-            <img src="/assests/topcoat_likee (1).svg" alt="">
-
-        </div>
-        <div>
-            <img src="/assests/unsplash_SqYmTDQYMjo.svg" alt="">
-            <p>Roti Bakar</p>
-            <p>lorem ipsum</p>
-            <p>$20</p>
-            <img src="/assests/topcoat_like (1).svg" alt="">
-
-        </div>
-        <div>
-            <img src="/assests/unsplash_vg2p2BK57bY.svg" alt="">
-            <p>Spaghetti</p>
-            <p>lorem ipsum</p>
-            <p>$20</p>
-            <img src="/assests/topcoat_like (1).svg" alt="">
-
-        </div>
-        <button>More Menu</button>
-    </section>
-</main>
-<aside>
-    <section class="page-four">
-        <div class="image-grid">
-            <img src="/assests/unsplash_-YHSwy6uqvk.svg" alt="">
-            <img src="/assests/unsplash_K63facPD8gg.svg" alt="">
-            <img src="/assests/unsplash_MGFPFWSZfgM.svg" alt="">
-        </div>
-        <div>
-            <div>
-                <p>What they say</p>
-                <h3>What Our Customers Say About Us</h3>
+            <div class="hero-img">
+              <img src="/assests/img-hero.svg" alt="image-hero" />
             </div>
-            <div class="review-card">
-                <img src="/assests/unsplash_Xbe20Z_DlDs.svg" alt="">
-                <p>Naura Silvana</p>
-                <span>
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/bx_bxs-star-half.svg" alt="">
-
-                </span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sint repellendus obcaecati qui ducimus perferendis ipsam nostrum delectus rerum reiciendis praesentium veritatis aspernatur nobis dolorum corrupti rem error maxime molestias?</p>
-            </div>
-            <div>
-                <img src="/assests/unsplash_Xbe20Z_DlDs (1).svg" alt="">
-                <p>Azura</p>
-                <span>
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/ant-design_star-filled.svg" alt="">
-                    <img src="/assests/bx_bxs-star-half.svg" alt="">
-
-                </span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos est iure distinctio cum sapiente placeat perferendis nisi repudiandae quaerat, a tempora voluptate fuga quasi molestiae in explicabo nesciunt nostrum aut!</p>
-            </div>
-        </div>
-    </section>
-    <section class="page-five">
-        <h3>Join our member and get discount up to 50%</h3>
-        <button><img src="/assests/clarity_sign-in-line.svg" alt="sign up">Sign up</button>
-    </section>
-</aside>
-    
-    <footer>
-        <section class="page-six">
-            <div>
-                <div>
-                    <h4>Fresh Bite<img src="/assests/food 2.svg" alt=""/></h4>
-                    <p>Teen imli, Shani Mandir, Palda, Indore MP 452001</p>
-                    <div>
-                        <img src="/assests/akar-icons_instagram-fill.svg" alt="">
-                        <img src="/assests/bx_bxl-facebook.svg" alt="">
-                        <img src="/assests/akar-icons_twitter-fill.svg" alt="">
-
-                    </div>
-                </div>
-                <div>
-                    <h4>Company</h4>
-                    <p>About Us</p>
-                    <p>Career</p>
-                    <p>How It Work</p>
-                </div>
-                <div>
-                    <h4>Policy</h4>
-                    <p>FAQ</p>
-                    <p>Privacy</p>
-                    <p>Shipping</p>
-                </div>
-                <div>
-                    <h4>Get In Touch</h4>
-                    <p>+91 123 4567 8900</p>
-                    <p>food@example.com</p>
-                </div>
-                <hr>
-                <p>2023 Fresh Bite. ALL RIGHT RESERVED.</p>
-            </div>
+          </div>
         </section>
+      </aside>
+
+      <!-- services -->
+      <aside>
+        <section class="page-two">
+          <div class="service-text">
+            <h2 class="service-title">How it works</h2>
+            <h3 class="service-subtitle">What We Serve</h3>
+            <p class="service-description">
+              Product Quality Is Our Priority, And Always guarantees halal and
+              safety until it is in your hands
+            </p>
+          </div>
+          <div class="service-cards">
+            <div class="service-card">
+              <img src="/assests/order 1.svg" alt="order" />
+              <h3>Easy to Order</h3>
+              <p>you only order through the app</p>
+            </div>
+            <div class="service-card">
+              <img src="/assests/delivery 1.svg" alt="delivery" />
+              <h3>Fastest Delivery</h3>
+              <p>Delivery will be on time</p>
+            </div>
+            <div class="service-card">
+              <img src="/assests/courier 1.svg" alt="courier" />
+              <h3>Best Quality</h3>
+              <p>The best quality food for you</p>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Popular-menu -->
+      <aside>
+        <section class="page-three">
+          <h2 class="popular-title">Our menu</h2>
+          <h3 class="popular-subtitle">Our Popular Menu</h3>
+          <p class="popular-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            deleniti nam eum at voluptatum voluptate.
+          </p>
+          <div class="menu-cards">
+            <div class="menu-card">
+              <img
+                src="/assests/unsplash_G6wx5j5-dR8.svg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <div class="curved">
+                <p>Mie Ramen</p>
+                <p>lorem ipsum</p>
+                <div class="price">
+                  <p>$20</p>
+                  <img src="/assests/topcoat_like (1).svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="/assests/unsplash_zBONkjGFGko.svg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <div class="curved">
+                <p>Salad Tahu</p>
+                <p>lorem ipsum</p>
+                <div class="price">
+                  <p>$20</p>
+                  <img src="/assests/topcoat_likee (1).svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="/assests/unsplash_SqYmTDQYMjo.svg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <div class="curved">
+                <p>Roti Bakar</p>
+                <p>lorem ipsum</p>
+                <div class="price">
+                  <p>$20</p>
+                  <img src="/assests/topcoat_like (1).svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="/assests/unsplash_vg2p2BK57bY.svg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <div class="curved">
+                <p>Spaghetti</p>
+                <p>lorem ipsum</p>
+                <div class="price">
+                  <p>$20</p>
+                  <img src="/assests/topcoat_like (1).svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="menu-btn">More Menu</button>
+        </section>
+      </aside>
+
+      <!-- testimonial -->
+      <aside>
+        <section class="page-four">
+          <div class="image-grid">
+            <img src="/assests/unsplash_-YHSwy6uqvk.svg" alt="" width="300px" />
+            <img src="/assests/unsplash_K63facPD8gg.svg" alt="" width="150px" />
+            <img src="/assests/unsplash_MGFPFWSZfgM.svg" alt="" width="150px" />
+          </div>
+          <div>
+            <div class="testimonial-text">
+              <h2 class="testimonial-title">What they say</h2>
+              <h3 class="testimonial-subtitle">
+                <bold>What Our Customers Say About Us</bold>
+              </h3>
+            </div>
+            <div class="swiper review-cards js-review-slider" style="width: 90%; height: 10%; margin-top: 1em; " >
+              <div class="swiper-wrapper">
+              <div class="review-card swiper-slide">
+                <div class="review-rate">
+                <img src="/assests/unsplash_Xbe20Z_DlDs.svg" alt="" />
+                <div>
+
+                <p class="review-name">Naura Silvana</p>
+                <span>
+                  <img src="/assests/ant-design_star-filled.svg" alt="" />
+                  <img src="/assests/ant-design_star-filled.svg" alt="" />
+                  <img src="/assests/ant-design_star-filled.svg" alt="" />
+                  <img src="/assests/ant-design_star-filled.svg" alt="" />
+                  <img src="/assests/bx_bxs-star-half.svg" alt="" />
+                </span>
+              </div>
+              </div>
+                <p class="review-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam,
+                </p>
+              </div>
+              <div class="review-card swiper-slide">
+                <div class="review-rate">
+                  <img src="/assests/unsplash_Xbe20Z_DlDs (1).svg" alt="" />
+                  <div>
+                    <p class="review-name">Azura</p>
+                    <span>
+                      <img src="/assests/ant-design_star-filled.svg" alt="" />
+                      <img src="/assests/ant-design_star-filled.svg" alt="" />
+                      <img src="/assests/ant-design_star-filled.svg" alt="" />
+                      <img src="/assests/ant-design_star-filled.svg" alt="" />
+                      <img src="/assests/bx_bxs-star-half.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+                <p class="review-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                  repudiandae quaerat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination js-review-pagination" style="margin-top: 1em; position: relative;"></div>
+          </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- 50% -->
+      <aside>
+        <section class="page-five">
+          <h3>Join our member and get discount up to 50%</h3>
+          <button class="signup-btn">
+            <img src="/assests/clarity_sign-in-line.svg" alt="sign up" />
+            <span>Sign up</span>
+          </button>
+        </section>
+      </aside>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <section class="page-six">
+        <div class="f-content">
+          <div class="f-location">
+            <div class="logo f-logo">
+              <h3>Fresh Bite</h3>
+              <img src="/assests/food 2.svg" alt="" />
+            </div>
+            <p>Teen imli, Shani Mandir, Palda, Indore MP 452001</p>
+            <div class="f-social-icons">
+              <img src="/assests/akar-icons_instagram-fill.svg" alt="" />
+              <img src="/assests/bx_bxl-facebook.svg" alt="" />
+              <img src="/assests/akar-icons_twitter-fill.svg" alt="" />
+            </div>
+          </div>
+          <div class="f-Company">
+            <h3>Company</h3>
+            <div class="f-info">
+              <p>About Us</p>
+              <p>Career</p>
+              <p>How It Work</p>
+            </div>
+          </div>
+          <div class="f-policy">
+            <h3>Policy</h3>
+            <div class="f-info">
+              <p>FAQ</p>
+              <p>Privacy</p>
+              <p>Shipping</p>
+            </div>
+          </div>
+          <div class="f-inTouch">
+            <h3>Get In Touch</h3>
+            <div class="f-info">
+              <p>+91 123 4567 8900</p>
+              <p>food@example.com</p>
+            </div>
+          </div>
+          <div class="f-line"></div>
+          <p class="f-rights">2023 Fresh Bite. ALL RIGHT RESERVED.</p>
+        </div>
+      </section>
     </footer>
-    
-</body>
-</body>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
 </html>
