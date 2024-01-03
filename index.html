@@ -44,7 +44,7 @@
               <img src="assests/Vector.svg" alt="search" />
             </li>
             <li class="nav-link"><img src="assests/cart.svg" alt="cart" /></li>
-            <li class="nav-link">
+            <li class="nav-link btn-link">
               <button class="signin-btn">
                 <img src="assests/clarity_sign-in-line.svg" alt="sign in" />
                 <span>Sign in</span>
@@ -68,11 +68,10 @@
         <section class="page-one">
           <div class="hero">
             <div class="hero-text">
-              <h2 class="hero-header">Be The Fastest In Delivery Your Food</h2>
+              <h2 class="hero-header">Be The Fastest In Delivery Your <span class="hero-food">Food</span></h2>
               <p class="hero-p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sit
-                reprehenderit delectus aut odit laboriosam? Tempore, esse at!
-                Alias culpa maiores, repellendus sed consectetur aperiam beatae.
+                reprehenderit delectus aut odit laboriosam? 
               </p>
               <button class="hero-btn">
                 <img src="assests/clarity_sign-in-line.svg" alt="sign in" />
@@ -200,11 +199,11 @@
       <aside>
         <section class="page-four">
           <div class="image-grid">
-            <img src="assests/unsplash_-YHSwy6uqvk.svg" alt="" width="300px" />
-            <img src="assests/unsplash_K63facPD8gg.svg" alt="" width="150px" />
-            <img src="assests/unsplash_MGFPFWSZfgM.svg" alt="" width="150px" />
+            <img src="assests/unsplash_-YHSwy6uqvk.svg" alt="" width="300px" class="image-grid-one"/>
+            <img src="assests/unsplash_K63facPD8gg.svg" alt="" width="150px" class="image-grid-two"/>
+            <img src="assests/unsplash_MGFPFWSZfgM.svg" alt="" width="150px" class="image-grid-two img-two"/>
           </div>
-          <div>
+          <div class="review">
             <div class="testimonial-text">
               <h2 class="testimonial-title">What they say</h2>
               <h3 class="testimonial-subtitle">
@@ -233,6 +232,44 @@
                   <p class="review-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Laboriosam,
+                  </p>
+                </div>
+                <div class="review-card swiper-slide">
+                  <div class="review-rate">
+                    <img src="assests/unsplash_Xbe20Z_DlDs (1).svg" alt="" />
+                    <div>
+                      <p class="review-name">Azura</p>
+                      <span>
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/bx_bxs-star-half.svg" alt="" />
+                      </span>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    repudiandae quaerat.
+                  </p>
+                </div>
+                <div class="review-card swiper-slide">
+                  <div class="review-rate">
+                    <img src="assests/unsplash_Xbe20Z_DlDs (1).svg" alt="" />
+                    <div>
+                      <p class="review-name">Azura</p>
+                      <span>
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/ant-design_star-filled.svg" alt="" />
+                        <img src="assests/bx_bxs-star-half.svg" alt="" />
+                      </span>
+                    </div>
+                  </div>
+                  <p class="review-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    repudiandae quaerat.
                   </p>
                 </div>
                 <div class="review-card swiper-slide">
@@ -315,6 +352,9 @@
               <p>food@example.com</p>
             </div>
           </div>
+          
+        </div>
+        <div>
           <div class="f-line"></div>
           <p class="f-rights">2023 Fresh Bite. ALL RIGHT RESERVED.</p>
         </div>
@@ -324,18 +364,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".js-review-slider", {
-        grabCursor: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".js-review-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 2,
-          },
-        },
-      });
+  grabCursor: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".js-review-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+    },
+  },
+});
     </script>
   </body>
 </html>
