@@ -1,6 +1,7 @@
 import './styles/style.css'
 
 import logo from './assets/logo.svg'
+import group from './assets/Group.svg'
 import instagram from './assets/akar-icons_instagram-fill.svg'
 import twitter from './assets/akar-icons_twitter-fill.svg'
 import star from './assets/ant-design_star-filled.svg'
@@ -38,6 +39,13 @@ for (let i = 0; i<logoo.length; i++){
   console.log(logoo[i])
   logoo[i].src = logo
 }
+
+// let groupp = document.querySelector("group")
+// groupp.scr = group
+
+let groupp = document.getElementById("group")
+console.log(groupp)
+groupp.src = group;
 
 let vectorr = document.getElementById("vector")
 console.log(vectorr)
@@ -182,7 +190,6 @@ fimg.onload = function() {
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const nav = document.querySelector(".nav");
 
-const main = document.getElementById("mainElement");
 
 hamburgerMenu.addEventListener("click", () => {
   nav.classList.toggle("active");
