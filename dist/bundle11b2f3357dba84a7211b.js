@@ -64,6 +64,7 @@ ul {
   list-style: none;
 }
 
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -95,6 +96,15 @@ ul {
   display: flex;
   gap: 1.6rem;
   font-size: 1.2rem;
+}
+
+.nav--ul__one>li:hover{
+  text-decoration: underline;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 .hamburger-menu {
@@ -327,7 +337,9 @@ ul {
 /* footer */
 
 .f-content {
-  font-size: 1em;
+  position: relative;
+  font-size: 0.9em;
+  
 }
 
 .f-logo {
@@ -367,9 +379,18 @@ ul {
 }
 
 .f-rights {
-  text-align: center;
+  text-align:center;
   padding: 0.2em 0;
   font-weight: 500;
+}
+.f-info>ul{
+  padding-left: .9em;
+}
+.f-info>ul>li{
+  padding-top: 1em;
+}
+.f-info>ul>li:hover{
+  text-decoration:underline;
 }
 
 .swiper {
@@ -415,6 +436,11 @@ ul {
   .nav.active {
     /* right: 0; */
     inset: 0 0 0 50%;
+  }
+  .f-policy{
+    position: absolute;
+    bottom: 6.5rem;
+    left: 2rem;
   }
 }
 
@@ -524,6 +550,7 @@ ul {
   .f-social-icons {
     display: var(--display);
     justify-content: center;
+    align-items: center;
   }
 
   .f-Company > h3,
@@ -560,8 +587,17 @@ ul {
   .nav {
     align-items: center;
   }
+  .f-info>ul{
+    padding-left: .9em;
+  }
+  .f-info>ul>li{
+    padding-top: 1em;
+  }
+  .f-info>ul>li:hover{
+    text-decoration:underline;
+  }
 }
-`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"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","sourcesContent":[":root {\n  /* colors */\n  --background-color: #fff9ea;\n  --logo-text-color: #fff;\n  --service-text-header-color: #ffcb45;\n  --service-background-color: #ffffff;\n\n  /* layout */\n\n  --display: flex;\n}\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n/* header */\nheader {\n  background-color: var(--background-color);\n  padding: 0.5rem 0;\n}\nbody {\n  background-color: var(--background-color);\n}\n\n.logo {\n  display: var(--display);\n  align-items: center;\n  justify-content: center;\n  gap: 0.5em;\n}\n\n.logo > h4 {\n  padding-top: 2px;\n  color: var(--logo-text-color);\n}\n\nul {\n  list-style: none;\n}\n\n.nav-container {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 90%;\n  margin: 0 auto;\n  position: fixed;\n  z-index: 99999;\n  background-color: hsla(0, 100%, 0%, 0.8);\n  border-radius: 15px;\n  left: 5%;\n  padding: 0 10px;\n}\n.nav {\n  display: flex;\n  flex-grow: 1;\n  background-color: var(--background-color);\n\n  border-radius: 15px;\n}\n\n.nav--ul__one {\n  margin: 0 auto;\n}\n\n.nav-container,\n.nav--ul__one,\n.nav--ul__two {\n  display: flex;\n  gap: 1.6rem;\n  font-size: 1.2rem;\n}\n\n.hamburger-menu {\n  display: none; /* Hidden by default for larger screens */\n  cursor: pointer;\n  color: white;\n}\n\n.hero {\n  padding: 0 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 2.5rem;\n}\n\n.hero-text {\n  width: 90%;\n  font-size: 1.2em;\n}\n\n.hero-header {\n  line-height: normal;\n  text-align: center;\n}\n\n.hero-food {\n  color: var(--service-text-header-color);\n}\n.hero-p {\n  line-height: 1.5em;\n  padding: 0.5em 0;\n  text-align: justify;\n}\n.hero-btn,\n.signin-btn,\n.signup-btn {\n  margin-top: 0.5em;\n  background-color: #ffcb45;\n  padding: 0.8em;\n  border-radius: 20px;\n  border: none;\n  display: flex;\n  width: min(10rem, 8rem);\n  justify-content: space-evenly;\n}\n.menu-btn {\n  text-align: center;\n  background-color: #ffcb45;\n  padding: 0.8em;\n  border-radius: 20px;\n  border: none;\n  width: min(10rem, 8rem);\n}\n\n/* service-styling */\n.page-two {\n  text-align: center;\n  width: 100%;\n  font-size: 1.15em;\n  padding: 1em;\n}\n\n.service-title {\n  color: var(--service-text-header-color);\n  font-size: 1.5em;\n}\n\n.service-subtitle {\n  padding: 0.5em 0;\n}\n\n.service-description {\n  text-align: center;\n  padding-bottom: 0.5em;\n  line-height: 1.3em;\n}\n\n.service-cards {\n  display: var(--display);\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 0.5rem;\n}\n\n.service-card {\n  padding: 0.5em;\n}\n\n.service-card * {\n  padding: 0.15em;\n}\n\n/* popular menu */\n.page-three {\n  text-align: center;\n  width: 100%;\n  font-size: 1.15em;\n  padding: 1em;\n}\n\n.popular-title {\n  color: var(--service-text-header-color);\n  font-size: 1.5em;\n}\n\n.popular-subtitle {\n  padding: 0.5em 0;\n}\n\n.popular-description {\n  text-align: center;\n  padding-bottom: 0.5em;\n  line-height: 1.3em;\n}\n\n.menu-cards {\n  display: var(--display);\n  flex-direction: column;\n  gap: 10px;\n  padding: 1em;\n  justify-content: center;\n  align-items: center;\n}\n\n.menu-card {\n  display: var(--display);\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  width: 300px;\n  height: 380px;\n  background-color: #f1f1f1;\n  border-radius: 7%;\n  border: none;\n}\n.menu-card > img {\n  padding: 1.5em;\n}\n.curved {\n  width: 298px;\n  height: 175px;\n  background-color: #ffffff;\n  border-radius: 35% 35% 7% 7%;\n  display: var(--display);\n  flex-direction: column;\n  justify-content: space-around;\n  padding-top: 2em;\n}\n.price {\n  display: var(--display);\n  justify-content: space-between;\n  padding: 1.5em;\n}\n\n.image-grid {\n  text-align: center;\n}\n\n.testimonial-text {\n  text-align: center;\n}\n\n.testimonial-title {\n  color: #ffcb45;\n  padding: 0.5em;\n  font-size: 1.5em;\n}\n\n.review-cards {\n  display: var(--display);\n  align-items: center;\n  justify-content: center;\n  padding: 0.5em;\n}\n\n.review-rate {\n  display: var(--display);\n  gap: 1em;\n}\n\n.review-card {\n  display: var(--display);\n  flex-direction: column;\n  border: 1px solid black;\n  width: 90%;\n  height: 60%;\n  padding: 0.8em;\n  border-radius: 10px;\n}\n\n.review-name {\n  padding: 0.5em;\n}\n\n.review-text {\n  padding: 0.5em 0;\n}\n\n/* 50% */\n.page-five {\n  background-repeat: no-repeat;\n  width: 80.68%;\n  text-align: center;\n  position: relative;\n  left: 10%;\n  border-radius: 10px;\n  display: var(--display);\n  flex-direction: column;\n  align-items: center;\n  padding: 0.5em 0.4em;\n  margin: 1.5em 0;\n  justify-content: center;\n}\n\n.page-five > h3 {\n  color: #fff;\n  font-size: 1.5em;\n  width: 80%;\n  padding-bottom: 1em;\n}\n\n.signup-btn {\n  text-align: center;\n  width: min(8rem, 6rem);\n}\n\n/* footer */\n\n.f-content {\n  font-size: 1em;\n}\n\n.f-logo {\n  padding-bottom: 0.4em;\n}\n\n.f-logo > h3 {\n  padding-top: 0.9em;\n}\n\n.f-location > p {\n  text-align: center;\n}\n\n.f-social-icons {\n  display: var(--display);\n  justify-content: center;\n}\n\n.f-Company > h3,\n.f-policy > h3,\n.f-inTouch > h3 {\n  text-align: center;\n  padding: 0.8em 0 0.3em 0;\n}\n\n.f-info {\n  display: var(--display);\n  justify-content: center;\n  gap: 0.9em;\n}\n\n.f-line {\n  width: 80%;\n  margin: 0.3em 0 0.3em 2.5em;\n  border: 2px solid black;\n}\n\n.f-rights {\n  text-align: center;\n  padding: 0.2em 0;\n  font-weight: 500;\n}\n\n.swiper {\n  width: 600px;\n  height: 300px;\n}\n@media screen and (max-width: 700px) {\n  .nav-container .logo {\n    z-index: 2;\n  }\n\n  .nav {\n    flex-direction: column;\n    gap: 2rem;\n    height: 65vh;\n    width: 20px;\n    z-index: 9999;\n  }\n  .nav--ul__one,\n  .nav--ul__two {\n    flex-direction: column;\n    gap: 0.6rem;\n  }\n  .hamburger-menu {\n    display: block;\n    z-index: 10000;\n  }\n  .nav {\n    position: absolute;\n    top: 0;\n    /* right: -100%; */\n    bottom: 0;\n    width: 50%;\n\n    inset: 0 0 0 110%;\n    padding-top: 6rem;\n\n    align-items: center;\n    text-align: center;\n    transition: 0.15s ease-in-out;\n    margin-top: 3rem;\n  }\n  .nav.active {\n    /* right: 0; */\n    inset: 0 0 0 50%;\n  }\n}\n\n@media screen and (min-width: 768px) {\n  .nav-container {\n    background-color: var(--background-color);\n    padding: 10px;\n    z-index: 9999;\n  }\n\n  .logo > h4 {\n    color: black;\n  }\n\n  #mainElement {\n    padding-top: 20px;\n  }\n\n  .hero {\n    padding: 0 10px;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n  }\n  .hero-text {\n    width: 35%;\n    margin-right: 20%;\n  }\n  .hero-img {\n    margin-left: 7.5%;\n  }\n  .hero-header {\n    line-height: normal;\n    text-align: left;\n  }\n  .service-cards {\n    flex-direction: row;\n    justify-content: space-around;\n  }\n  .menu-cards {\n    flex-direction: row;\n    gap: 2.5%;\n  }\n  .menu-card {\n    width: 21.2%;\n    height: 25%;\n  }\n  .curved {\n    width: 100%;\n    height: 1%;\n  }\n\n  .page-four {\n    display: var(--display);\n    justify-content: center;\n    gap: 5em;\n  }\n  .image-grid {\n    display: grid;\n    position: relative;\n  }\n  .image-grid-one {\n    width: 300px;\n  }\n  .image-grid-two {\n    width: 150px;\n  }\n  .img-two {\n    position: absolute;\n    top: 145px;\n    right: 0px;\n  }\n  .review {\n    width: 50%;\n    height: 100%;\n  }\n\n  .page-five {\n    height: 250px;\n  }\n\n  .f-content {\n    display: flex;\n    font-size: 0.9em;\n    justify-content: space-evenly;\n  }\n\n  .f-logo {\n    padding-bottom: 0.4em;\n    padding-left: 1.1em;\n  }\n\n  .f-logo > h3 {\n    padding-top: 0.9em;\n  }\n\n  .f-location {\n    display: var(--display);\n    flex-direction: column;\n    align-items: start;\n  }\n\n  .f-location > p {\n    width: 60%;\n  }\n\n  .f-social-icons {\n    display: var(--display);\n    justify-content: center;\n  }\n\n  .f-Company > h3,\n  .f-policy > h3,\n  .f-inTouch > h3 {\n    text-align: center;\n    padding: 0.8em 0 0.3em 0;\n  }\n\n  .f-info {\n    display: var(--display);\n    justify-content: center;\n    gap: 0.9em;\n    flex-direction: column;\n  }\n\n  .f-line {\n    width: 82%;\n    height: 0.8%;\n    margin: 0.3em 0 0.3em 9em;\n    border: 2px solid black;\n  }\n\n  .f-rights {\n    text-align: center;\n    padding-top: 0.2em;\n    padding-bottom: 0.9em;\n    font-weight: 500;\n  }\n  .nav--ul__two {\n    align-items: end;\n  }\n\n  .nav {\n    align-items: center;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/styles/style.css"],"names":[],"mappings":"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","sourcesContent":[":root {\n  /* colors */\n  --background-color: #fff9ea;\n  --logo-text-color: #fff;\n  --service-text-header-color: #ffcb45;\n  --service-background-color: #ffffff;\n\n  /* layout */\n\n  --display: flex;\n}\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\n/* header */\nheader {\n  background-color: var(--background-color);\n  padding: 0.5rem 0;\n}\nbody {\n  background-color: var(--background-color);\n}\n\n.logo {\n  display: var(--display);\n  align-items: center;\n  justify-content: center;\n  gap: 0.5em;\n}\n\n.logo > h4 {\n  padding-top: 2px;\n  color: var(--logo-text-color);\n}\n\nul {\n  list-style: none;\n}\n\n\n.nav-container {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  width: 90%;\n  margin: 0 auto;\n  position: fixed;\n  z-index: 99999;\n  background-color: hsla(0, 100%, 0%, 0.8);\n  border-radius: 15px;\n  left: 5%;\n  padding: 0 10px;\n}\n.nav {\n  display: flex;\n  flex-grow: 1;\n  background-color: var(--background-color);\n\n  border-radius: 15px;\n}\n\n.nav--ul__one {\n  margin: 0 auto;\n}\n\n.nav-container,\n.nav--ul__one,\n.nav--ul__two {\n  display: flex;\n  gap: 1.6rem;\n  font-size: 1.2rem;\n}\n\n.nav--ul__one>li:hover{\n  text-decoration: underline;\n}\n\na{\n  text-decoration: none;\n  color: black;\n}\n\n.hamburger-menu {\n  display: none; /* Hidden by default for larger screens */\n  cursor: pointer;\n  color: white;\n}\n\n.hero {\n  padding: 0 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n  margin-top: 2.5rem;\n}\n\n.hero-text {\n  width: 90%;\n  font-size: 1.2em;\n}\n\n.hero-header {\n  line-height: normal;\n  text-align: center;\n}\n\n.hero-food {\n  color: var(--service-text-header-color);\n}\n.hero-p {\n  line-height: 1.5em;\n  padding: 0.5em 0;\n  text-align: justify;\n}\n.hero-btn,\n.signin-btn,\n.signup-btn {\n  margin-top: 0.5em;\n  background-color: #ffcb45;\n  padding: 0.8em;\n  border-radius: 20px;\n  border: none;\n  display: flex;\n  width: min(10rem, 8rem);\n  justify-content: space-evenly;\n}\n.menu-btn {\n  text-align: center;\n  background-color: #ffcb45;\n  padding: 0.8em;\n  border-radius: 20px;\n  border: none;\n  width: min(10rem, 8rem);\n}\n\n/* service-styling */\n.page-two {\n  text-align: center;\n  width: 100%;\n  font-size: 1.15em;\n  padding: 1em;\n}\n\n.service-title {\n  color: var(--service-text-header-color);\n  font-size: 1.5em;\n}\n\n.service-subtitle {\n  padding: 0.5em 0;\n}\n\n.service-description {\n  text-align: center;\n  padding-bottom: 0.5em;\n  line-height: 1.3em;\n}\n\n.service-cards {\n  display: var(--display);\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 0.5rem;\n}\n\n.service-card {\n  padding: 0.5em;\n}\n\n.service-card * {\n  padding: 0.15em;\n}\n\n/* popular menu */\n.page-three {\n  text-align: center;\n  width: 100%;\n  font-size: 1.15em;\n  padding: 1em;\n}\n\n.popular-title {\n  color: var(--service-text-header-color);\n  font-size: 1.5em;\n}\n\n.popular-subtitle {\n  padding: 0.5em 0;\n}\n\n.popular-description {\n  text-align: center;\n  padding-bottom: 0.5em;\n  line-height: 1.3em;\n}\n\n.menu-cards {\n  display: var(--display);\n  flex-direction: column;\n  gap: 10px;\n  padding: 1em;\n  justify-content: center;\n  align-items: center;\n}\n\n.menu-card {\n  display: var(--display);\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-around;\n  width: 300px;\n  height: 380px;\n  background-color: #f1f1f1;\n  border-radius: 7%;\n  border: none;\n}\n.menu-card > img {\n  padding: 1.5em;\n}\n.curved {\n  width: 298px;\n  height: 175px;\n  background-color: #ffffff;\n  border-radius: 35% 35% 7% 7%;\n  display: var(--display);\n  flex-direction: column;\n  justify-content: space-around;\n  padding-top: 2em;\n}\n.price {\n  display: var(--display);\n  justify-content: space-between;\n  padding: 1.5em;\n}\n\n.image-grid {\n  text-align: center;\n}\n\n.testimonial-text {\n  text-align: center;\n}\n\n.testimonial-title {\n  color: #ffcb45;\n  padding: 0.5em;\n  font-size: 1.5em;\n}\n\n.review-cards {\n  display: var(--display);\n  align-items: center;\n  justify-content: center;\n  padding: 0.5em;\n}\n\n.review-rate {\n  display: var(--display);\n  gap: 1em;\n}\n\n.review-card {\n  display: var(--display);\n  flex-direction: column;\n  border: 1px solid black;\n  width: 90%;\n  height: 60%;\n  padding: 0.8em;\n  border-radius: 10px;\n}\n\n.review-name {\n  padding: 0.5em;\n}\n\n.review-text {\n  padding: 0.5em 0;\n}\n\n/* 50% */\n.page-five {\n  background-repeat: no-repeat;\n  width: 80.68%;\n  text-align: center;\n  position: relative;\n  left: 10%;\n  border-radius: 10px;\n  display: var(--display);\n  flex-direction: column;\n  align-items: center;\n  padding: 0.5em 0.4em;\n  margin: 1.5em 0;\n  justify-content: center;\n}\n\n.page-five > h3 {\n  color: #fff;\n  font-size: 1.5em;\n  width: 80%;\n  padding-bottom: 1em;\n}\n\n.signup-btn {\n  text-align: center;\n  width: min(8rem, 6rem);\n}\n\n/* footer */\n\n.f-content {\n  position: relative;\n  font-size: 0.9em;\n  \n}\n\n.f-logo {\n  padding-bottom: 0.4em;\n}\n\n.f-logo > h3 {\n  padding-top: 0.9em;\n}\n\n.f-location > p {\n  text-align: center;\n}\n\n.f-social-icons {\n  display: var(--display);\n  justify-content: center;\n}\n\n.f-Company > h3,\n.f-policy > h3,\n.f-inTouch > h3 {\n  text-align: center;\n  padding: 0.8em 0 0.3em 0;\n}\n\n.f-info {\n  display: var(--display);\n  justify-content: center;\n  gap: 0.9em;\n}\n\n.f-line {\n  width: 80%;\n  margin: 0.3em 0 0.3em 2.5em;\n  border: 2px solid black;\n}\n\n.f-rights {\n  text-align:center;\n  padding: 0.2em 0;\n  font-weight: 500;\n}\n.f-info>ul{\n  padding-left: .9em;\n}\n.f-info>ul>li{\n  padding-top: 1em;\n}\n.f-info>ul>li:hover{\n  text-decoration:underline;\n}\n\n.swiper {\n  width: 600px;\n  height: 300px;\n}\n@media screen and (max-width: 700px) {\n  .nav-container .logo {\n    z-index: 2;\n  }\n\n  .nav {\n    flex-direction: column;\n    gap: 2rem;\n    height: 65vh;\n    width: 20px;\n    z-index: 9999;\n  }\n  .nav--ul__one,\n  .nav--ul__two {\n    flex-direction: column;\n    gap: 0.6rem;\n  }\n  .hamburger-menu {\n    display: block;\n    z-index: 10000;\n  }\n  .nav {\n    position: absolute;\n    top: 0;\n    /* right: -100%; */\n    bottom: 0;\n    width: 50%;\n\n    inset: 0 0 0 110%;\n    padding-top: 6rem;\n\n    align-items: center;\n    text-align: center;\n    transition: 0.15s ease-in-out;\n    margin-top: 3rem;\n  }\n  .nav.active {\n    /* right: 0; */\n    inset: 0 0 0 50%;\n  }\n  .f-policy{\n    position: absolute;\n    bottom: 6.5rem;\n    left: 2rem;\n  }\n}\n\n@media screen and (min-width: 768px) {\n  .nav-container {\n    background-color: var(--background-color);\n    padding: 10px;\n    z-index: 9999;\n  }\n\n  .logo > h4 {\n    color: black;\n  }\n\n  #mainElement {\n    padding-top: 20px;\n  }\n\n  .hero {\n    padding: 0 10px;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n  }\n  .hero-text {\n    width: 35%;\n    margin-right: 20%;\n  }\n  .hero-img {\n    margin-left: 7.5%;\n  }\n  .hero-header {\n    line-height: normal;\n    text-align: left;\n  }\n  .service-cards {\n    flex-direction: row;\n    justify-content: space-around;\n  }\n  .menu-cards {\n    flex-direction: row;\n    gap: 2.5%;\n  }\n  .menu-card {\n    width: 21.2%;\n    height: 25%;\n  }\n  .curved {\n    width: 100%;\n    height: 1%;\n  }\n\n  .page-four {\n    display: var(--display);\n    justify-content: center;\n    gap: 5em;\n  }\n  .image-grid {\n    display: grid;\n    position: relative;\n  }\n  .image-grid-one {\n    width: 300px;\n  }\n  .image-grid-two {\n    width: 150px;\n  }\n  .img-two {\n    position: absolute;\n    top: 145px;\n    right: 0px;\n  }\n  .review {\n    width: 50%;\n    height: 100%;\n  }\n\n  .page-five {\n    height: 250px;\n  }\n\n  .f-content {\n    display: flex;\n    font-size: 0.9em;\n    justify-content: space-evenly;\n  }\n\n  .f-logo {\n    padding-bottom: 0.4em;\n    padding-left: 1.1em;\n  }\n\n  .f-logo > h3 {\n    padding-top: 0.9em;\n  }\n\n  .f-location {\n    display: var(--display);\n    flex-direction: column;\n    align-items: start;\n  }\n\n  .f-location > p {\n    width: 60%;\n  }\n\n  .f-social-icons {\n    display: var(--display);\n    justify-content: center;\n    align-items: center;\n  }\n\n  .f-Company > h3,\n  .f-policy > h3,\n  .f-inTouch > h3 {\n    text-align: center;\n    padding: 0.8em 0 0.3em 0;\n  }\n\n  .f-info {\n    display: var(--display);\n    justify-content: center;\n    gap: 0.9em;\n    flex-direction: column;\n  }\n\n  .f-line {\n    width: 82%;\n    height: 0.8%;\n    margin: 0.3em 0 0.3em 9em;\n    border: 2px solid black;\n  }\n\n  .f-rights {\n    text-align: center;\n    padding-top: 0.2em;\n    padding-bottom: 0.9em;\n    font-weight: 500;\n  }\n  .nav--ul__two {\n    align-items: end;\n  }\n\n  .nav {\n    align-items: center;\n  }\n  .f-info>ul{\n    padding-left: .9em;\n  }\n  .f-info>ul>li{\n    padding-top: 1em;\n  }\n  .f-info>ul>li:hover{\n    text-decoration:underline;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1511,96 +1547,122 @@ for (var i = 0; i < logoo.length; i++) {
 var groupp = document.getElementById("group");
 console.log(groupp);
 groupp.src = _assets_Group_svg__WEBPACK_IMPORTED_MODULE_2__;
+groupp.decoding = "async";
 var vectorr = document.getElementById("vector");
 console.log(vectorr);
 vectorr.src = _assets_Vector_svg__WEBPACK_IMPORTED_MODULE_31__;
+vectorr.decoding = "async";
 var cartt = document.getElementById("cart");
 console.log(cartt);
 cartt.src = _assets_cart_svg__WEBPACK_IMPORTED_MODULE_9__;
+cartt.decoding = "async";
 var signInn = document.querySelectorAll(".signIn");
 console.log(signInn);
 signInn = Array.from(signInn);
 for (var j = 0; j < signInn.length; j++) {
   console.log(signInn[j]);
   signInn[j].src = _assets_clarity_sign_in_line_svg__WEBPACK_IMPORTED_MODULE_10__;
+  signInn[j].decoding = "async";
 }
 var menuu = document.getElementById("menu");
 console.log(menuu);
 menuu.src = _assets_menu_FILL0_wght400_GRAD0_opsz24_svg__WEBPACK_IMPORTED_MODULE_15__;
+menuu.decoding = "async";
 var herosvgg = document.getElementById("herosvg");
 console.log(herosvgg);
 herosvgg.src = _assets_img_hero_svg__WEBPACK_IMPORTED_MODULE_14__;
+herosvgg.decoding = "async";
 var ordersvgg = document.getElementById("ordersvg");
 console.log(ordersvgg);
 ordersvgg.src = _assets_order_1_svg__WEBPACK_IMPORTED_MODULE_16__;
+ordersvgg.decoding = "async";
 var deliverysvgg = document.getElementById("deliverysvg");
 console.log(deliverysvgg);
 deliverysvgg.src = _assets_delivery_1_svg__WEBPACK_IMPORTED_MODULE_12__;
+deliverysvgg.decoding = "async";
 var couriersvgg = document.getElementById("couriersvg");
 console.log(couriersvgg);
 couriersvgg.src = _assets_courier_1_svg__WEBPACK_IMPORTED_MODULE_11__;
+couriersvgg.decoding = "async";
 var unsplash_GG = document.getElementById("unsplash_G");
 console.log(unsplash_GG);
 unsplash_GG.src = _assets_unsplash_G6wx5j5_dR8_svg__WEBPACK_IMPORTED_MODULE_23__;
+unsplash_GG.decoding = "async";
 var unsplash_zz = document.getElementById("unsplash_z");
 console.log(unsplash_zz);
 unsplash_zz.src = _assets_unsplash_zBONkjGFGko_svg__WEBPACK_IMPORTED_MODULE_30__;
+unsplash_zz.decoding = "async";
 var top11 = document.querySelectorAll(".top1");
 console.log(top11);
 top11.src = top;
+top11.decoding = "async";
 for (var _i = 0; _i < top11.length; _i++) {
   console.log(top11[_i]);
   top11[_i].src = _assets_topcoat_like_1_svg__WEBPACK_IMPORTED_MODULE_18__;
+  top11[_i].decoding = "async";
 }
 var unsplash_SS = document.getElementById("unsplash_S");
 console.log(unsplash_SS);
 unsplash_SS.src = _assets_unsplash_SqYmTDQYMjo_svg__WEBPACK_IMPORTED_MODULE_26__;
+unsplash_SS.decoding = "async";
 var unsplash_vv = document.getElementById("unsplash_v");
 console.log(unsplash_vv);
 unsplash_vv.src = _assets_unsplash_vg2p2BK57bY_svg__WEBPACK_IMPORTED_MODULE_27__;
+unsplash_vv.decoding = "async";
 var unsplash_YY = document.getElementById("unsplash_Y");
 console.log(unsplash_YY);
 unsplash_YY.src = _assets_unsplash_YHSwy6uqvk_svg__WEBPACK_IMPORTED_MODULE_21__;
+unsplash_YY.decoding = "async";
 var unsplash_KK = document.getElementById("unsplash_K");
 console.log(unsplash_KK);
 unsplash_KK.src = _assets_unsplash_K63facPD8gg_svg__WEBPACK_IMPORTED_MODULE_24__;
+unsplash_KK.decoding = "async";
 var unsplash_MM = document.getElementById("unsplash_M");
 console.log(unsplash_MM);
 unsplash_MM.src = _assets_unsplash_MGFPFWSZfgM_svg__WEBPACK_IMPORTED_MODULE_25__;
+unsplash_MM.decoding = "async";
 var unsplash_XX = document.getElementById("unsplash_X");
 console.log(unsplash_XX);
 unsplash_XX.src = _assets_unsplash_Xbe20Z_DlDs_svg__WEBPACK_IMPORTED_MODULE_29__;
+unsplash_XX.decoding = "async";
 var design_starr = document.querySelectorAll(".design_star");
 console.log(design_starr);
 design_starr = Array.from(design_starr);
 for (var _i2 = 0; _i2 < design_starr.length; _i2++) {
   design_starr[_i2].src = _assets_ant_design_star_filled_svg__WEBPACK_IMPORTED_MODULE_5__;
+  design_starr[_i2].decoding = "async";
 }
 var bxs_starr = document.querySelectorAll(".bxs-star");
 console.log(bxs_starr);
 bxs_starr = Array.from(bxs_starr);
 for (var _i3 = 0; _i3 < bxs_starr.length; _i3++) {
   bxs_starr[_i3].src = _assets_bx_bxs_star_half_svg__WEBPACK_IMPORTED_MODULE_8__;
+  bxs_starr[_i3].decoding = "async";
 }
 var unsplash_X11 = document.querySelectorAll(".unsplash_X1");
 console.log(unsplash_X11);
 unsplash_X11 = Array.from(unsplash_X11);
 for (var _i4 = 0; _i4 < unsplash_X11.length; _i4++) {
   unsplash_X11[_i4].src = _assets_unsplash_Xbe20Z_DlDs_1_svg__WEBPACK_IMPORTED_MODULE_28__;
+  unsplash_X11[_i4].decoding = "async";
 }
 var iconsinstagram = document.getElementById("icons_instagram");
 console.log(iconsinstagram);
 iconsinstagram.src = _assets_akar_icons_instagram_fill_svg__WEBPACK_IMPORTED_MODULE_3__;
+iconsinstagram.decoding = "async";
 var bxlfacebook = document.getElementById("bxl-facebook");
 console.log(bxlfacebook);
 bxlfacebook.src = _assets_bx_bxl_facebook_svg__WEBPACK_IMPORTED_MODULE_7__;
+bxlfacebook.decoding = "async";
 var twitterr = document.getElementById("twitter");
 console.log(twitterr);
 twitterr.src = _assets_akar_icons_twitter_fill_svg__WEBPACK_IMPORTED_MODULE_4__;
+twitterr.decoding = "async";
 var sectionFive = document.querySelector(".page-five");
 console.log(sectionFive);
 var image = new Image();
 image.src = _assets_unsplash_2lWGQ02DGL8_svg__WEBPACK_IMPORTED_MODULE_22__;
+image.decoding = "async";
 image.onload = function () {
   sectionFive.style.backgroundImage = "url(".concat(_assets_unsplash_2lWGQ02DGL8_svg__WEBPACK_IMPORTED_MODULE_22__, ")");
 };
@@ -1608,6 +1670,7 @@ var hero = document.querySelector(".hero");
 console.log(hero);
 var img = new Image();
 img.src = _assets_shapes_svg__WEBPACK_IMPORTED_MODULE_17__;
+img.decoding = "async";
 img.onload = function () {
   hero.style.backgroundImage = "url(".concat(_assets_shapes_svg__WEBPACK_IMPORTED_MODULE_17__, ")");
 };
@@ -1615,6 +1678,7 @@ var footer = document.getElementById("f");
 console.log(footer);
 var fimg = new Image();
 fimg.src = _assets_Bg_Image_svg__WEBPACK_IMPORTED_MODULE_6__;
+fimg.decoding = "async";
 fimg.onload = function () {
   footer.style.backgroundImage = "url(".concat(_assets_Bg_Image_svg__WEBPACK_IMPORTED_MODULE_6__, ")");
 };
@@ -1627,4 +1691,4 @@ hamburgerMenu.addEventListener("click", function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlec6531d25b3dbb2d311aa.js.map
+//# sourceMappingURL=bundle11b2f3357dba84a7211b.js.map
